@@ -9,6 +9,7 @@ export default {
         primaryDark: '#1f2a48',
         searchDark: '#0079fe',
         activeDark: '#0271ed',
+        infoDark: '#141c2f',
 
         backgroundLight: '#ffff',
         primaryLight: '#809CF0',

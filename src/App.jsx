@@ -22,7 +22,7 @@ function App () {
         <header className='flex justify-between py-8 '>
           <h1 className='text-3xl font-'>devfinder</h1>
           <div className='flex gap-2 justify-center items-center'>
-            <span className='uppercase font-medium'>Light</span>
+            <span className='uppercase font-medium'>{light === false ? 'light' : 'dark'}</span>
             <button onClick={handleBack}>
               {light === false
                 ? (
@@ -55,15 +55,15 @@ function App () {
           </label>
         </form>
 
-        <section className='bg-primaryDark dark:bg-primaryLight'>
-          <header>
-            <picture>
-              <img src='https://placekitten.com/100/100' alt='' />
+        <section className='bg-primaryDark dark:bg-primaryLight p-8 rounded-xl'>
+          <header className='flex p-4 mb-2 items-center gap-6'>
+            <picture >
+              <img className='rounded-full' src='https://placekitten.com/100/100' />
             </picture>
 
             <div>
-              <h2>The Octocat</h2>
-              <a href='#'>@octocat</a>
+              <h2 className='font-bold'>The Octocat</h2>
+              <a className='text-activeDark ' href='#'>@octocat</a>
               <p>joined 25 Jan 2011</p>
             </div>
           </header>
@@ -73,22 +73,22 @@ function App () {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
               ipsam suscipit cumque illum natus delectus eius
             </p>
-            <div>
+            <div className='flex gap-7 my-5 p-5 justify-center bg-infoDark rounded-xl text-center '>
               <div>
-                <h3>repos</h3>
-                <span>8</span>
+                <h3>Repos</h3>
+                <span className='font-bold'>8</span>
               </div>
               <div>
-                <h3>followers</h3>
-                <span>3838</span>
+                <h3>Followers</h3>
+                <span className='font-bold'>3838</span>
               </div>
               <div>
-                <h3>following</h3>
-                <span>9</span>
+                <h3>Following</h3>
+                <span className='font-bold'>9</span>
               </div>
             </div>
           </article>
-          <nav>
+          <nav className='flex flex-col'>
             <p>
               <FontAwesomeIcon icon={faLocationDot} /> San Francisco
             </p>

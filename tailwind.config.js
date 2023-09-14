@@ -11,10 +11,11 @@ export default {
         activeDark: '#0271ed',
         infoDark: '#141c2f',
 
-        backgroundLight: '#ffff',
-        primaryLight: '#809CF0',
+        backgroundLight: '#f4fff8',
+        primaryLight: '#547aa5',
         searchLight: '#0079fe',
-        activeLight: '#0271ed'
+        activeLight: '#0271ed',
+        infoLight: '#313849'
 
       }
     }
